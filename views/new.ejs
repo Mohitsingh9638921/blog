@@ -1,0 +1,27 @@
+<% include header %>
+<div class="ui main text container segment">
+   <div class="ui huge header">New Blog</div>
+
+<form class="ui form" action="/blog" method="POST">
+  <div class="field">
+     <label>Title</label>
+     <input type="text" name="blog[title]" placeholder="title please">
+  </div>   
+   <div class="field">
+     <label>Image</label>
+     <input type="text" name="blog[image]" placeholder="title please">
+  </div>   
+   <div class="field">
+     <label>Blog Content</label>
+     <textarea name="blog[body]" placeholder="body content please"></textarea>
+  </div>   
+  
+  
+  
+   
+  <button class="ui violet fluid basic button">Submit</button>
+
+
+</form>   
+</div>
+<% include footer %>
